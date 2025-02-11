@@ -3,7 +3,7 @@ import React from "react";
 function BlogPage() {
   return (
     <div className="container">
-      <h1>ブログ</h1>
+      <h1>Blog</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
         praesentium? Qui quo dolorem explicabo deserunt molestias nisi quaerat
