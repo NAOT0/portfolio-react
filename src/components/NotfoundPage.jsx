@@ -6,7 +6,7 @@ function NotfoundPage() {
       <h1>404 NOT FOUND</h1>
       <div class="row justify-content-center">
         <div class="col-md-4 service text-center">
-          <a class="btn btn-dark" href="https://naot0.github.io/" role="button">
+          <a class="btn btn-dark" href="/" role="button">
             Topに戻る
           </a>
         </div>
