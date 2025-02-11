@@ -1,81 +1,32 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import reactImage from "../Images/react.png";
-import jsImage from "../Images/js.png";
-import firebaseImage from "../Images/firebase.jpg";
-import profileImage from "../Images/icon.png";
+import pythonImage from "../Images/python.png";
+import gasImage from "../Images/gas.png";
+import LineBotImage from "../Images/LINEboticon.png";
 
 function HomePage() {
   return (
     <div className="container text-center">
-      <h1>Naoto.K</h1>
-
-      <img src={profileImage} className="profileImage" />
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-          </tr>
-        </tbody>
-      </table>
-
       <section class="page-section" id="services">
         <div className="service">
           <div class="text-center">
-            <h2 class="section-heading text-uppercase">PORTFOLIO</h2>
-            <h3 class="section-subheading text-muted mb-5">
-              私が作った作品一覧です
-            </h3>
+            <h1 class="section-heading text-uppercase">PORTFOLIO</h1>
+            <h3 class="section-subheading text-muted mb-5">作品一覧</h3>
           </div>
-          <div class="row text-center">
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 class="my-3">ECサイト</h4>
+          <div class="row justify-content-center">
+            <div class="col-md-4 service text-center">
+              <a href="https://lin.ee/SNEduDo">
+                <img
+                  src={LineBotImage}
+                  class="mx-auto d-block"
+                  className="img-fluid rounded hover-zoom"
+                />
+              </a>
+              <h4 class="my-3">LINEBot</h4>
               <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-                maxime quam architecto quo inventore harum ex magni, dicta
-                impedit.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 class="my-3">レスポンシブサイト</h4>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-                maxime quam architecto quo inventore harum ex magni, dicta
-                impedit.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 class="my-3">ウェブセキュリティ</h4>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-                maxime quam architecto quo inventore harum ex magni, dicta
-                impedit.
+                Google Apps
+                Scriptを用いて学寮食堂の献立の確認が行えるLINEBotを作製しました。
               </p>
             </div>
           </div>
@@ -89,17 +40,17 @@ function HomePage() {
             <div class="col-md-4 services">
               <img src={reactImage} />
               <h4>React</h4>
-              <p>Reactがつかえます</p>
+              <p>このサイトはReactで構成されています</p>
             </div>
             <div class="col-md-4 services">
-              <img src={jsImage} />
-              <h4>HTML/CSS</h4>
-              <p>HTML/CSSがつかえます</p>
+              <img src={gasImage} />
+              <h4>Google Apps Script</h4>
+              <p>Google Apps Script学習中</p>
             </div>
             <div class="col-md-4 services">
-              <img src={firebaseImage} />
-              <h4>Firebase</h4>
-              <p>Firebaseがつかえます</p>
+              <img src={pythonImage} />
+              <h4>python</h4>
+              <p>pythonがつかえます</p>
             </div>
           </div>
           <button type="button" class="btn btn-primary">

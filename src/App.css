@@ -90,3 +90,17 @@ img {
 #skill button {
   margin-bottom: 100px;
 }
+
+#services img {
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  height: 320px;
+}
+.hover-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
