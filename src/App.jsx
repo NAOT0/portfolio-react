@@ -8,11 +8,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio-react">
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/portfolio-react" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<NotfoundPage />} />
