@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/portfolio-react/"}>
       <Router>
         <div className="App">
           <Header />
