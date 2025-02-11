@@ -84,7 +84,7 @@ img {
   object-fit: cover;
   margin-bottom: 12px;
   margin-top: 12px;
-  height: 300px;
+  height: auto;
   max-width: 100%;
 }
 
