@@ -8,17 +8,19 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
-          <Route path="*" element={<NotfoundPage />} />
-        </Routes>
-      </div>
-    </Router>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/portfolio-react/"}>
+      <Router>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="*" element={<NotfoundPage />} />
+          </Routes>
+        </div>
+      </Router>
+    </BrowserRouter>
   );
 }
 
